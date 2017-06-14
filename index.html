@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="description" content="This sets a session and break timer in minutes"/>
+    <meta name="keywords" content="pomodoro, clock, pomodoro clock, session, time, break"/>
+    <meta name="robots" content="index/follow"/>
+    <meta name="author" content="Jonalbert Encina"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.0/jquery-ui.min.js"></script>
+    <script src="clock.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="clock.css"/>
+    
+    <title>Pomodoro Clock</title>
+    
+  </head>
+  <body>
+    <!--This sound file was created using a pan flute in LMMS (Linux MultiMedia Studio).-->
+    <audio id="alarm" src="https://dl.dropbox.com/s/jh3toq1n04umpuo/Zelda_Flute.wav?dl=0" type="audio/wav"></audio>
+
+    <!--Create a Bootstrap container-->
+    <div class="container">
+      
+      <!--This centers the text within the Bootstrap
+          container.-->
+      <div class="text-center">
+        
+        <!--This is for interfacing the Pomodoro clock-->
+        <div class="inf">  
+          <h1 id="h">
+            <b>
+              Pomodoro Clock
+            </b>
+          </h1>
+
+          <h2>
+            Session Time:
+          </h2>
+          <h3>
+            <span id="sest">
+              25
+            </span>
+          </h3> 
+          <!--Each class with "btn btn-info" creates a 
+              light blue Bootstrap button.-->
+          <a class="btn btn-info nb"id="sm">
+            <h4>
+             -
+            </h4>
+          </a>
+          <a class="btn btn-info nb"id="sp">
+            <h4>
+            +
+            </h4>
+          </a>
+          <h2>
+            Break Time:
+          </h2>
+          <h3>
+            <span id="brt">
+              5
+            </span>
+          </h3>
+          <a class="btn btn-info nb"id="bm">
+            <h4>
+             -
+            </h4>
+          </a>
+          <a class="btn btn-info nb"id="bp">
+            <h4>
+             +
+            </h4>
+          </a> <br/>
+          <h2>
+           How many minutes to -/+? 
+          </h2>
+          <h3>
+            <span id="min">
+              1
+            </span>
+          </h3>
+          <a class="btn btn-info nb" id="1m">
+            <h4> 
+             1
+            </h4>
+          </a>
+          <a class="btn btn-info nb" id="2m">
+            <h4>
+             2
+            </h4>
+          </a>
+          <a class="btn btn-info nb" id="5m">
+            <h4>
+             5
+            </h4>
+          </a> <br/>
+          <a class="btn btn-info nb" id="10m">
+            <h4>
+            10
+            </h4>
+          </a> 
+          <a class="btn btn-info nb" id="20m">
+            <h4>
+            20
+            </h4>
+          </a>
+          <a class="btn btn-info nb" id="50m">
+            <h4>
+             50
+            </h4>
+          </a> <br/>
+          <a class="btn btn-info"id="rs">
+            <h4 id="rst">
+              Reset
+            </h4>
+          </a>
+          <a class="btn btn-info"id="st">
+            <h4>
+            Start Time
+            </h4>
+
+          </a><br/>
+
+        </div> <!--end of inf-->
+        
+        <!--This displays the timer for the break and
+            session time.-->
+        <div style="margin-bottom:100px">
+          <div class="clk">  
+            <!--This will display session or break.-->
+            <h2 id="sebr">
+              Session
+            </h2>
+            <h1>
+              <!--This displays the actual timer.-->
+              <span id="time">
+
+              </span>
+
+            </h1>
+            <!--This displays "Stop Time" or "Resume".-->
+            <a class="btn btn-info"id="stp">
+              <h4 id="str">
+                Stop Time
+              </h4>
+            </a>
+          </div> <!--end of ld-->
+        </div> <!--end of margin-bottom-->
+      </div> <!--end of text-center-->
+</div> <!--end of container-->
+  </body>
+</html>

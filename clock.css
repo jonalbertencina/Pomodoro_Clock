@@ -1,0 +1,98 @@
+html{
+  font-size:13px;
+}
+
+body{
+  margin-top: 60px;
+  margin-bottom: 70px;
+  background:rgb(16,21,101);
+  color:white;
+}
+
+/*This is for the formatting the margin sizes of
+  the heading.
+*/
+#h{
+  margin-top:50px;
+  margin-bottom:50px;
+}
+/* This formats the top margin size for the
+  "Session" or "Break" time text.
+*/
+#sebr{
+  margin-top:75px;
+}
+/*This formats the size of the "Start Time"
+  button.
+*/
+#st{
+  margin-top: 20px;
+  margin-bottom:20px;
+  width: auto;
+  height: auto;
+  padding-right: 5px;
+  padding-left:5px;
+}
+/*This formats the size of the "Reset" button.
+*/
+#rs{
+  margin-top: 30px;
+  margin-bottom:15px;
+  width: auto;
+  height: auto;
+  padding-right: 5px;
+  padding-left:5px;
+}
+/*This formats the bottom margin size for the
+  stop or resume button.
+*/
+#stp{
+  margin-bottom:25px;
+}
+
+/*This formats the size and color of the interface
+ for the Pomodoro Clock.
+*/
+.inf{
+  max-width:850px;
+  height:auto;
+  border-radius: 5px;
+  border-style: solid;
+  border-color: white;
+  padding-right:10px;
+  padding-left:10px;
+  margin: 0 auto;
+  margin-bottom: 40px;
+  background:rgb(55,124,0);
+}
+
+/*This formats the size and shape of the Pomodoro clock
+  with a timer. 
+*/
+.clk{ 
+  display: inline-block;
+  width: 300px;
+  height:300px;
+  border-radius: 50%;
+  border-width: 4px;
+  border-style: solid;
+  border-top-color: orange;
+  border-bottom-color:orange;
+  margin: 0 auto;
+
+}
+/*This formats the size of the numbered or -/+ 
+  buttons.
+*/
+.nb{
+  padding-top:0px;
+  padding-bottom:0px;
+  padding-left:5px;
+  padding-right:5px;
+  height: auto;
+  width: 40px;
+  margin-left:5px;
+  margin-bottom: 10px;
+  height:auto;
+  
+}
